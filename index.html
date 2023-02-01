@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="script.js"></script>
+
+    <title>Weather App</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="input-elements">
+        <form class="input-fields">
+          <input class="input-text" placeholder="Type a city..." type="text" />
+          <!-- <input class="input-btn" value="Submit" type="submit" /> -->
+        </form>
+        <button class="add-new-city">
+          <ion-icon class="add-icon" name="add-circle-outline"></ion-icon>
+        </button>
+      </div>
+
+      <div class="mini-container">
+        <div class="weather">
+          <div class="first-flex">
+            <h1 class="city"></h1>
+            <h1 class="temperature"><span class="grades"></span>&#176;C</h1>
+            <img class="image" src="" alt="icon" />
+          </div>
+
+          <div class="second-flex">
+            <div class="forecast">
+              <h3 class="forecast-date"></h3>
+              <img class="forecast-icon" src="" alt="icon-forecast" />
+              <h3 class="forecast-temperature">
+                <span class="forecast-grades"></span>&#176;C
+              </h3>
+            </div>
+
+            <div class="forecast borderlr">
+              <h3 class="forecast-date"></h3>
+              <img class="forecast-icon" src="" alt="icon-forecast" />
+              <h3 class="forecast-temperature">
+                <span class="forecast-grades"></span>&#176;C
+              </h3>
+            </div>
+
+            <div class="forecast">
+              <h3 class="forecast-date"></h3>
+              <img class="forecast-icon" src="" alt="icon-forecast" />
+              <h3 class="forecast-temperature">
+                <span class="forecast-grades"></span>&#176;C
+              </h3>
+            </div>
+          </div>
+        </div>
+        <div class="error-msg hide">
+          <h2 class="hidden-msg">
+            Unfortunately we can not show you weather in your city, because you
+            did not allow us to access your location :(
+          </h2>
+        </div>
+      </div>
+    </div>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>
